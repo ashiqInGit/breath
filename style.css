@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 
 
 
@@ -6,6 +8,8 @@
     --light-color:#F3F9FB;
     --dark-color:#1C2B2D;
     --primary-color:#00B7A8;
+    --lightvarient-darkColor:#1C2B2Ddf;
+    --black-color:#000;
 }
 
 
@@ -21,11 +25,6 @@ body{
     background-color: var(--light-color);
     line-height: 1.5em;
 }
-
-/* img{
-    width:100%;
-} */
-
 
 
 /* ++++++++++++++++++++++++++++++  LANDIND-PAGE ++++++++++++++++++++++++++++++*/
@@ -132,7 +131,7 @@ body{
 .content-container{
     /* border:1px solid red; */
     width:60%;
-    height:50%;
+    height:auto;
     margin-top: 10em;
     margin-left: 6%;
     display: flex;
@@ -150,8 +149,8 @@ body{
 }
 
 .content-head span{
-    font-weight: 300;
-    color:#000;
+    font-weight: 200;
+    color:var(--black-color);
 }
 
 
@@ -166,6 +165,7 @@ body{
 
 .quote{
     color: var(--dark-color);
+    padding-bottom: 7em;
 }
 
 .quote span{
@@ -224,7 +224,7 @@ body{
     width:450px;
     height:450px;
     position:absolute;
-    bottom:50px;
+    top:30vh;
     right:80px;
 }
 
@@ -264,6 +264,10 @@ body{
 
     .content-container{
         margin-top: 6em;
+    }
+    
+    .quote{
+        padding-bottom: 2em;
     }
 
     .content-head {
@@ -316,16 +320,22 @@ body{
     }
 
     .main{
-        background-image: url("images/illustration/illus.jpg");
+        background-image: url("Images/illustration/illus.jpg");
         background-size: cover;
-        background-color: #1C2B2Daa;
+        background-color: var(--lightvarient-darkColor);
         background-blend-mode: multiply;
     }
 
 
     .content-head{
         font-size: 3em;
+        color:var(--black-color);
     }
+
+    .content-head span{
+        color:var(--primary-color);
+    }
+
     .quote{
         color: var(--light-color);
     }
@@ -353,3 +363,138 @@ body{
         width:30ch;
     }
 }
+
+
+
+
+
+/* ++++++++++++++++++++++++++++  SECTION -2 +++++++++++++++++++++++++++++++ */
+
+
+.section-2{
+    /* border:1px solid red; */
+    width:100%;
+    height: auto;
+    background-color:var(--dark-color);
+}
+
+
+.section-2-head-cont{
+    padding: 4em 1em 1em 1em;
+    text-align: center;
+}
+
+
+.section-2-head{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color:var(--light-color);
+}
+
+.section-2-head span{
+    font-weight: 900;
+    color:var(--primary-color);
+}
+
+
+.card-container{
+    /* border:1px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3em 0 0 0;
+    width:70%;
+    margin:0 auto;
+}
+
+.card{
+    /* border: 1px solid red; */
+    text-align: center;
+    width:200px;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0 .2em .5em .2em;
+    margin: 1em .5em;
+    position: relative;
+    background-size: cover;
+    background-color: var(--lightvarient-darkColor);
+    background-blend-mode:soft-light;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.card::after{
+    content: ' ';
+    background:linear-gradient(transparent 10%,var(--black-color));
+    width:100%;
+    height:100px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.card-1:hover,
+.card-1:focus{
+    margin-top: 2.9em;
+}
+
+.card-3:hover,
+.card-3:focus{
+    margin-top: 2.9em;
+}
+.card-2:hover,
+.card-2:focus{
+    margin-top: .9em;
+}
+.card-4:hover,
+.card-4:focus{
+    margin-top: .9em;
+}
+
+.card-1{
+    background-image: url("Images/food02.jpg");
+    margin-top: 3em;
+}
+
+.card-2{
+    background-image: url("Images/exercise01.jpg");
+}
+
+.card-3{
+    background-image: url("Images/talk.jpg");
+    margin-top: 3em;
+}
+
+.card-4{
+    background-image: url("Images/happy02.jpg");
+}
+
+
+
+.card-content-cont{
+    /* border: 1px solid blue; */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+.card-head{
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 900;
+    color:var(--light-color);
+}
+
+.card-text{
+    font-size: .7em;
+    font-weight: 200;
+    color:var(--light-color);
+    z-index: 10;
+    line-height: 1.3em;
+}
+
