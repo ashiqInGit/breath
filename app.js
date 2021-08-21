@@ -3,33 +3,33 @@
 
 
 
-//+++++++++++++++++++++++++++++++++HAMBURGER MENU+++++++++++++=++++++++++++++++++++++++
+// //+++++++++++++++++++++++++++++++++HAMBURGER MENU+++++++++++++=++++++++++++++++++++++++
 
 
 
-const hamburger=document.querySelector('.hamBurger');
+// const hamburger=document.querySelector('.hamBurger');
 
 
-const line1=document.querySelector('.line1');
-const line2=document.querySelector('.line2');
-const line3=document.querySelector('.line3');
-const midLine1=document.querySelector('.mid-line1');
-const midLine2=document.querySelector('.mid-line2');
+// const line1=document.querySelector('.line1');
+// const line2=document.querySelector('.line2');
+// const line3=document.querySelector('.line3');
+// const midLine1=document.querySelector('.mid-line1');
+// const midLine2=document.querySelector('.mid-line2');
 
-const mobileNav=document.querySelector('#mobile-nav');
+// const mobileNav=document.querySelector('#mobile-nav');
 
-hamburger.addEventListener('click',()=>{
+// hamburger.addEventListener('click',()=>{
     
 
-    line1.classList.toggle('changetheline1');
-    line3.classList.toggle('changetheline3');
+//     line1.classList.toggle('changetheline1');
+//     line3.classList.toggle('changetheline3');
 
-    midLine1.classList.toggle('changeMidLine1');
-    midLine2.classList.toggle('changeMidLine2');
+//     midLine1.classList.toggle('changeMidLine1');
+//     midLine2.classList.toggle('changeMidLine2');
 
-    mobileNav.classList.toggle('show-nav');
+//     mobileNav.classList.toggle('show-nav');
 
-})
+// })
 
 
 
@@ -54,6 +54,18 @@ window.addEventListener('scroll',()=>{
         girlsShadow.style.width=`${val+160}px`;
     }
 
+})
+
+
+
+// PAGE LINKING STUFF
+
+
+const card1=document.querySelector('.card-1');
+
+
+card1.addEventListener('click',()=>{
+    window.location.href="otherHTML/food.html";
 })
 
 
@@ -103,7 +115,7 @@ const smallCrads=document.querySelectorAll('.more-card');
 
 let smallCradOptions={
     root: null,
-    rootMargin:'-50px',
+    rootMargin:'0px',
     threshold:0
 }
 

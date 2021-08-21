@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
 
 
 
@@ -523,7 +523,7 @@ body{
     }
 
     .content-2{
-        padding-top: 3em;
+        padding-top: 8.5em;
         width:30ch;
     }
 }
@@ -758,14 +758,92 @@ body{
 
 
 
+/* ++++++++++++++++++++ FOOTER +++++++++++++++++++ */
 
 
+.footer{
+    background-color:var(--primary-color) ;
+    padding: 3em 3em .5em 3em;
+    width: 100%;
+    height:auto;
+}
+
+.footer-text-cont{
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.footer-text-cont h2{
+    padding-bottom: .5em;
+    color:var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+}
+
+.footer-text-cont p{
+    color:var(--dark-color);
+    max-width:50ch;
+}
 
 
+.support-btn{
+    outline: none;
+    border:none;
+    padding: .5em 1em;
+    background-color:var(--dark-color) ;
+    color: var(--light-color);
+    margin:.7em 0 0 0;
+    font-family: 'poppins', serif;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border:1px solid transparent;
+}
+
+.support-btn:hover,
+.support-btn:focus{
+    background-color: transparent;
+    color:var(--dark-color);
+    border-color: var(--dark-color);
+}
 
 
+.social-icon-cont{
+    padding:2em 0 .5em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.footer-logo{
+    color:var(--light-color);
+    margin:.5em 0;
+}
+
+.icons{
+    margin: .5em 0;
+}
+
+.icons ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.icons ul li{
+    padding: .5em 1em 0 0;
+}
+
+.icons ul li a{
+    color:var(--dark-color);
+    font-size: 1.5em;
+}
 
 
-
-
-
+.copy-rights{
+    padding: 1em 0 0 0;
+    text-align: center;
+    font-size: .8em;
+}
