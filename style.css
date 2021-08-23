@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
@@ -523,7 +525,7 @@ body{
     }
 
     .content-2{
-        padding-top: 8.5em;
+        padding-top: 10em;
         width:30ch;
     }
 }
