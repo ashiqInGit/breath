@@ -3,7 +3,7 @@
 // IMAGE AMIMATIONS
 
 
-const images=document.querySelectorAll('.food-img ');
+const images=document.querySelectorAll('.container-img ');
 
 
 let options ={

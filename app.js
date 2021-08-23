@@ -3,37 +3,6 @@
 
 
 
-// //+++++++++++++++++++++++++++++++++HAMBURGER MENU+++++++++++++=++++++++++++++++++++++++
-
-
-
-// const hamburger=document.querySelector('.hamBurger');
-
-
-// const line1=document.querySelector('.line1');
-// const line2=document.querySelector('.line2');
-// const line3=document.querySelector('.line3');
-// const midLine1=document.querySelector('.mid-line1');
-// const midLine2=document.querySelector('.mid-line2');
-
-// const mobileNav=document.querySelector('#mobile-nav');
-
-// hamburger.addEventListener('click',()=>{
-    
-
-//     line1.classList.toggle('changetheline1');
-//     line3.classList.toggle('changetheline3');
-
-//     midLine1.classList.toggle('changeMidLine1');
-//     midLine2.classList.toggle('changeMidLine2');
-
-//     mobileNav.classList.toggle('show-nav');
-
-// })
-
-
-
-
 // +++++++++++++++++++++  FIRSRT PAGE ANIMATION
 
 const girlIllustration=document.querySelector('#land-img');
@@ -62,10 +31,16 @@ window.addEventListener('scroll',()=>{
 
 
 const card1=document.querySelector('.card-1');
+const card2=document.querySelector('.card-2');
 
 
 card1.addEventListener('click',()=>{
     window.location.href="otherHTML/food.html";
+})
+
+
+card2.addEventListener('click',()=>{
+    window.location.href="otherHTML/exercise.html";
 })
 
 
@@ -147,34 +122,6 @@ smallCrads.forEach((card)=>{
 
 
 
-
-// const mobileNavLists=document.querySelectorAll('.mobile-view-list');
-
-
-// let mobileNavOptions={
-//     root: null,
-//     rootMargin:'0px',
-//     threshold:1
-// }
-
-
-// let mobileNavObserver=new IntersectionObserver((entries,observer)=>{
-
-//     entries.forEach((entry)=>{
-
-//         if(entry.isIntersecting){
-//             console.log(entry.target);
-//             entry.target.classList.add('fade-in-mobile-list');
-//         }
-
-//     })
-
-// },mobileNavOptions);
-
-
-// mobileNavLists.forEach((list)=>{
-//     mobileNavObserver.observe(list);
-// })
 
 
 
