@@ -122,24 +122,3 @@ smallCrads.forEach((card)=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
