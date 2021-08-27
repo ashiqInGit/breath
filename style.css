@@ -524,8 +524,12 @@ body{
         width:30ch;
     }
 
+    .content-head{
+        margin-top:2.5em;
+    }
+
     .content-2{
-        padding-top: 10em;
+        padding-top: 5em;
         width:30ch;
     }
 }
