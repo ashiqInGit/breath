@@ -27,6 +27,7 @@ var alldata=[
 
 // +++++++++++++++++++++++++ ADDING CHART ++++++++++++++++++++++++++++++++++++
 
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -139,30 +140,46 @@ function addCountry(countryName){
 
 
 
-// ++++++++++++++++++++= ADDING RANDOM COUNTRY +++++++++++++++++++++++++++++++++
+// //++++++++++++++++++++= ADDING RANDOM COUNTRY +++++++++++++++++++++++++++++++++
 
 
 // const randomCountryBtn=document.querySelector('.random-country-btn');
 
+// const errorBtn=document.querySelector('.error-btn');
+// const wholeChartCont=document.querySelector('.whole-staticstics-cont');
+// const errorMsgCont=document.querySelector('.error-msg-cont');
 
 // function addRandomCountry(){
 
 
 //     console.log(alldata.length);
-//     if(alldata.length>10){
+//     if(alldata.length>15){
 //         alldata.pop();
 //     }
 
-//     let randomNum=Math.floor(Math.random()*data.length);
-//     data[randomNum].borderWidth= 2;
-//     data[randomNum].tension=0.17;
-//     data[randomNum].backgroundColor='transparent';
+//     let randomcountry=Math.floor(Math.random()*data.length);
+
+//     data[randomcountry]["borderColor"]=`#${randomColorPicker()}`;
+//     data[randomcountry].borderWidth= 2;
+//     data[randomcountry].tension=0.17;
+//     data[randomcountry].backgroundColor='transparent';
 
 
-//     alldata.push(data[randomNum]);
-//     console.log(alldata);
+//     alldata.push(data[randomcountry]);
+//     // console.log(alldata);
 
-//     myChart.update();
+//     try{
+//         myChart.update();
+//     }catch(err){
+//         wholeChartCont.classList.add('blur-background');
+//         errorMsgCont.style.display="block";
+
+//         errorBtn.addEventListener('click',()=>{
+//             window.location.reload();
+//         })
+        
+//     }
+//     // myChart.update();
 // }
 
 
@@ -177,17 +194,33 @@ function addCountry(countryName){
 
 const removeCountryBtn=document.querySelector('.remove-country-btn');
 
+const errorBtn=document.querySelector('.error-btn');
+const wholeChartCont=document.querySelector('.whole-staticstics-cont');
+const errorMsgCont=document.querySelector('.error-msg-cont');
+
 
 function removeCountryFromChart(){
 
     if(alldata.length!==0){
         alldata.pop();
+    
+        try{
+            myChart.update();
+        }catch(err){
+            wholeChartCont.classList.add('blur-background');
+            errorMsgCont.style.display="block";
+    
+            errorBtn.addEventListener('click',()=>{
+                window.location.reload();
+            })
 
-
-        myChart.update();
+        }
+        
     }
-
+    
 }
+
+
 
 removeCountryBtn.addEventListener('click',()=>{
     removeCountryFromChart();

@@ -517,7 +517,19 @@ body{
 
     .blog-btn{
         border-color:var(--primary-color) ;
-        color:var(--light-color);
+        color:var(--primary-color);
+    }
+
+    .explore-btn:hover,
+    .explore-btn:focus{
+        background-color: transparent;
+        color:var(--primary-color);
+    }
+
+    .blog-btn:hover,
+    .blog-btn:focus{
+        background-color: var(--primary-color);
+        
     }
 
     .content-quote-cont{
