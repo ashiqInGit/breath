@@ -1,9 +1,7 @@
 
 
 
-
-
-// +++++++++++++++++++++  FIRSRT PAGE ANIMATION
+// +++++++++++++++++++++  FIRSRT PAGE ANIMATION ++++++++++++++++++++++++++
 
 const girlIllustration=document.querySelector('#land-img');
 const potLeft=document.querySelector('#pot_1');
@@ -44,6 +42,12 @@ card2.addEventListener('click',()=>{
 })
 
 
+const chatBotPageTakingBtn=document.querySelector('#chat-bot-page-portal-btn');
+
+
+chatBotPageTakingBtn.addEventListener('click',()=>{
+    window.location.href="otherHTML/chatBot.html";
+})
 
 // +++++++++++++++++++++++++++ ANIMATION STUFFS
 

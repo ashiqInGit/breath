@@ -1,21 +1,77 @@
-const btnn=document.querySelector('.btn');
-const userInput=document.querySelector('.input');
+
+
+// THE BUTTONS ++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+const startConvoBtn=document.querySelector('.start-convo-btn');
 const speakBtn=document.querySelector('.speak-btn');
+const stoConvoBtn=document.querySelector('.stop-convo-btn');
 
 
-const botText=document.querySelector('.bot-text');
+
+const startConvoBtnCont=document.querySelector('.start-convo-btn-cont');
+const otherBtnCont=document.querySelector('.other-btn-cont');
+
+
+
+
+
+stoConvoBtn.addEventListener('click',()=>{
+    startConvoBtnCont.style.display="block";
+
+    speakBtn.style.display="none";
+    stoConvoBtn.style.display="none";
+    
+})
+
+
+speakBtn.addEventListener('click',listenUser);
+
+
+// ++++++++++++++++++++++++++++++++ P5 JS SETUP FOR SPEECH REGOGNITION
+
+
+
+    
+var speech = new p5.Speech();
+
+var listenSpeech=new p5.SpeechRec('en-US');
 
 function setup(){
-
-
-    speak();
+    noCanvas();
+    startSpeaking();
+    
 }
 
 
 
+function welcome(){
+
+
+    speech.speak(`Hello my friend im happy you're here`); 
+
+}
+
+
+function startSpeaking(){
+
+
+    startConvoBtn.addEventListener('click',()=>{
+        startConvoBtnCont.style.display="none";
+    
+        speakBtn.style.display="block";
+        stoConvoBtn.style.display="block";
+
+        
+        welcome();
+    })
+
+}
 
 
 
+// //////////////////////// RIVE SCRIPT SETUP ////////////////
 
 var bot = new RiveScript();
 
@@ -23,50 +79,63 @@ bot.loadFile("../RiveScripts/botBrain.rive").then(loading_done).catch(loading_er
 
 
 function loading_done() {
-    console.log("Bot has finished loading!");
-    // botChat();
-    
 
-  }
+    console.log("Bot has finished loading!");
+    bot.sortReplies();
+
+}
 
 function loading_error(){
     console.log("Error!");
+
+    speech.speak("I think some Error occured");
 }
 
 
 
-function botChat(message){
-    let username = "local-user";
-    bot.sortReplies();
-   
-    bot.reply(username, message).then(function(reply) {
-      console.log("The bot says: " + reply);
+function listenUser(){
 
-      botText.innerHTML=reply;
+    listenSpeech.start();
+    listenSpeech.onResult=startListen;
+   
+    listenSpeech.onStart=start;
+    listenSpeech.onEnd=end;
+
+    function startListen(){
+        if(listenSpeech.resultValue){
+
+            let userInput=listenSpeech.resultString;
+            botReplay(userInput);
+        }
+
+    }
+ 
+
+}
+
+
+function botReplay(message){
+    
+    let username = "local-user";
+
+    bot.reply(username, message).then(function(reply) {
+
+        speech.speak(reply); 
+
     });
 }
 
 
 
+// +++++++++++ Listening text ++++++
 
 
-btnn.addEventListener('click',()=>{
+const listenText=document.querySelector('.listening-text');
 
-    let msg=userInput.value;
-    botChat(msg);
-
-})
-
-function shit(){
-    var foo = new p5.Speech(); // speech synthesis object
-    foo.speak(`Helloo this's your boy KSI G D B oluntunji`); // say something
+function start(){
+    listenText.classList.add("show-text");
 }
 
-
-
-function speak(){
-    speakBtn.addEventListener('click',shit)
+function end(){
+    listenText.classList.remove("show-text");
 }
-
-
-

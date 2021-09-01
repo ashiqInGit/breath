@@ -776,6 +776,114 @@ body{
 
 
 
+
+/* ++++++++++++++++++++++++++++++++++++  SECTION-3 ++++++++++++++++++++++++++++++++++++++ */
+
+
+.section-3-cont{
+    width:100%;
+    height:auto;
+    padding: 5em 1em;
+}
+
+.take-page-content-cont{
+    border:5px  var(--primary-color);
+    border-style:double;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    justify-content: space-between;
+}
+
+.talk-page-content{
+   
+    padding: 2em ;
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.talk-page-content div{
+    padding: 1em 0;
+}
+
+.talk-page-content h2{
+    padding:.5em 0;
+    font-weight: 900;
+    color: var(--dark-color);
+}
+
+.talk-page-content p{
+    padding: .3em 0;
+    font-weight: 400;
+    color:var(--dark-color)
+}
+
+
+.take-me-there-btn{
+    outline:none;
+    border:none;
+    background-color: transparent;
+    color:var(--primary-color);
+    font-size: 1.5em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+    font-family: 'poppins', serif;
+}
+
+.take-me-there-btn:hover,
+.take-me-there-btn:focus{
+    color: var(--dark-color);
+}
+
+
+.take-there-arrow{
+    margin:.3em 0 0 .5em;
+    transition: all 300ms ease-in;
+}
+
+
+.take-me-there-btn:hover .take-there-arrow,
+.take-me-there-btn:focus .take-there-arrow{
+    margin-left: 1em;
+}
+
+
+.take-page-img-cont{
+    /* border:1px solid red; */
+    min-width:300px;
+    min-height:300px;
+    background-image: url("Images/illustration/home-bot-img.png");
+    background-size: cover;
+    background-position-x: -100px;
+    background-color:var(--light-color);
+    background-blend-mode: multiply;
+}
+
+
+
+@media(max-width:775px){
+
+    .take-page-content-cont{
+        flex-direction: column-reverse;
+
+    }
+
+    .talk-page-content{
+        width:100%;
+    }
+
+}
+
+
+
 /* ++++++++++++++++++++ FOOTER +++++++++++++++++++ */
 
 
@@ -802,27 +910,6 @@ body{
 .footer-text-cont p{
     color:var(--dark-color);
     max-width:50ch;
-}
-
-
-.support-btn{
-    outline: none;
-    border:none;
-    padding: .5em 1em;
-    background-color:var(--dark-color) ;
-    color: var(--light-color);
-    margin:.7em 0 0 0;
-    font-family: 'poppins', serif;
-    cursor: pointer;
-    transition: all 200ms ease-in-out;
-    border:1px solid transparent;
-}
-
-.support-btn:hover,
-.support-btn:focus{
-    background-color: transparent;
-    color:var(--dark-color);
-    border-color: var(--dark-color);
 }
 
 
