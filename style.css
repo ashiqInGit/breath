@@ -35,6 +35,11 @@ body{
 
 
 
+p::selection{
+    background-color: var(--primary-color);
+    color:var(--light-color);
+}
+
 
 /* ++++++++++++++++++++++++++++++  LANDIND-PAGE ++++++++++++++++++++++++++++++*/
 
@@ -641,6 +646,11 @@ body{
     bottom: 0;
 }
 
+.card:hover,
+.card:focus{
+    box-shadow:0 0 10px var(--black-color);
+}
+
 .arrow{
     transition: all 300ms ease-in-out;
 }
@@ -683,7 +693,9 @@ body{
     font-family: 'Kaushan Script', cursive;
     font-weight: 900;
     color:var(--light-color);
+    transition: all 300ms ease-in-out;
 }
+
 
 .card-text{
     font-size: .7em;
@@ -952,3 +964,4 @@ body{
     text-align: center;
     font-size: .8em;
 }
+

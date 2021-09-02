@@ -1,0 +1,181 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+:root{
+    --light-color:#F3F9FB;
+    --dark-color:#1C2B2D;
+    --primary-color:#00B7A8;
+    --lightvarient-darkColor:#1C2B2Ddf;
+    --black-color:#000;
+    --shadow-color:#e4f0dc;
+}
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-color);
+    line-height: 1.5em;
+}
+
+
+
+p::selection{
+    background-color: var(--primary-color);
+    color:var(--dark-color);
+}
+
+
+/* ++++++++++++++++++++++++++++ BACK TO HOME BTN +++++++++++++++++++++++ */
+
+.back-to-home{
+    width:95%;
+    margin:0 auto;
+    padding:1em;
+}
+
+.back-to-home-arrow{
+    color:var(--light-color);
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+
+
+
+/**************** OTHER STYLEING ********************* */
+
+
+.game-page-content-cont{
+    /* border:1px solid red; */
+    width:95%;
+    margin:0 auto;
+    padding:2em 1em 1em 1em;
+}
+
+
+.page-head{
+    /* border:1px solid red; */
+    text-align: center;
+    font-weight:700;
+    color:var(--light-color);
+    padding-bottom: 3em;
+    letter-spacing: .05em;
+}
+
+.content-head{
+    font-weight:400;
+    color:var(--primary-color);
+}
+
+.game-page-content p{
+    color:var(--light-color);
+    padding:.5em 0;
+    max-width:100ch;
+    font-weight: 300;
+}
+
+
+.games-cont{
+    /* border:1px solid red; */
+    width:95%;
+    margin:0 auto;
+    padding:1em;
+}
+
+
+.games-cont h2{
+    color:var(--primary-color);
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+
+.game-card-cont{
+    /* border:1px solid wheat; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+
+
+.game{
+    width:150px;
+    height:150px;
+    margin: 0 2em;
+    border-radius:15px;
+    background-color: var(--light-color);
+    box-shadow: 0 0 10px var(--black-color);
+    cursor: pointer;
+}
+
+.actual-game-cont p{
+    color:var(--shadow-color);
+    text-align:center;
+    padding:.5em;
+}
+
+
+.more-game-option-cont{
+    padding:1em 2.5em;
+}
+
+.more-game-option-cont p{
+    color:var(--light-color);
+    font-weight: 300;
+    font-size: .8em;
+    position: relative;
+}
+
+.more-games-btn{
+    outline: none;
+    border:none;
+    border:1px solid var(--primary-color);
+    background-color: transparent;
+    color:var(--primary-color);
+    padding:.5em 1em;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: .5em;
+    transition: all 200ms ease-in;
+    
+}
+
+
+.more-games-btn:hover,
+.more-games-btn:focus{
+    background-color: var(--primary-color);
+    color:var(--light-color);
+
+}
+
+
+.pop-up-msg{
+    background-color: var(--light-color);
+    text-align:center;
+    color:var(--dark-color);
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    width:250px;
+    pointer-events: none;
+    clip-path: polygon(0 0,0% 0,0% 100%,0 100%);
+    transition: all 300ms ease-in;
+}
+

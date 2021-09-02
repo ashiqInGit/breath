@@ -30,6 +30,9 @@ window.addEventListener('scroll',()=>{
 
 const card1=document.querySelector('.card-1');
 const card2=document.querySelector('.card-2');
+const card3=document.querySelector('.card-3');
+const card4=document.querySelector('.card-4');
+const chatBotPageTakingBtn=document.querySelector('#chat-bot-page-portal-btn');
 
 
 card1.addEventListener('click',()=>{
@@ -42,7 +45,14 @@ card2.addEventListener('click',()=>{
 })
 
 
-const chatBotPageTakingBtn=document.querySelector('#chat-bot-page-portal-btn');
+card3.addEventListener('click',()=>{
+    window.location.href="#SECTION-3";
+})
+
+
+card4.addEventListener('click',()=>{
+    window.location.href="otherHTML/games.html";
+})
 
 
 chatBotPageTakingBtn.addEventListener('click',()=>{
@@ -77,15 +87,6 @@ cards.forEach((card)=>{
 })
 
 
-window.addEventListener('scroll',()=>{
-    if(window.pageYOffset==0){
-        cards.forEach((card)=>{
-            card.classList.remove('appear');
-        })
-    }
-})
-
-
 
 // SMALLCARD ANIMATIONS++++++++++ 
 
@@ -102,16 +103,13 @@ let smallCradOptions={
 let smallCardobserver= new IntersectionObserver((entries,observe)=>{
 
 
-    let speed=500;
+    let speed=300;
 
     entries.forEach((entry)=>{
 
         if(entry.isIntersecting){
             entry.target.style.transitionDuration=`${speed}ms`;
             entry.target.classList.add('appear');
-        }else{
-            entry.target.classList.remove('appear');   
-            entry.target.style.transitionDuration="0";     
         }
 
         speed+=200;
@@ -123,6 +121,21 @@ let smallCardobserver= new IntersectionObserver((entries,observe)=>{
 smallCrads.forEach((card)=>{
     smallCardobserver.observe(card);
 })
+
+
+
+window.addEventListener('scroll',()=>{
+    if(window.pageYOffset==0){
+        cards.forEach((card)=>{
+            card.classList.remove('appear');
+        })
+
+        smallCrads.forEach((card)=>{
+            card.classList.remove('appear');
+        })
+    }
+})
+
 
 
 
