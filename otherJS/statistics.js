@@ -46,7 +46,7 @@ var myChart = new Chart(canvas, {
         scales: {
             y: {
                 ticks: {
-                    // Include a dollar sign in the ticks
+                    
                     callback: function(value, index, values) {
                         return value + '%';
                     }
