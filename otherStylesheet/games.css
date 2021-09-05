@@ -27,8 +27,9 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     line-height: 1.5em;
+
 }
 
 
@@ -59,8 +60,13 @@ p::selection{
 /**************** OTHER STYLEING ********************* */
 
 
+.whole-container{
+    background-color: var(--dark-color);
+}
+
+
 .game-page-content-cont{
-    /* border:1px solid red; */
+
     width:95%;
     margin:0 auto;
     padding:2em 1em 1em 1em;
@@ -105,11 +111,12 @@ p::selection{
 
 
 .game-card-cont{
-    /* border:1px solid wheat; */
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
+    padding-bottom: 3em;
 }
 
 
@@ -179,3 +186,79 @@ p::selection{
     transition: all 300ms ease-in;
 }
 
+
+.game-top-bar{
+    width:95%;
+    margin:0 auto;
+    padding:1em;
+}
+
+.game-name-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--dark-color);
+}
+
+.start-btn-cont{
+    text-align: center;
+    padding-top: .5em;
+}
+
+.start-btn{
+    outline: none;
+    border:none;
+    background-color: var(--primary-color);
+    color:var(--dark-color);
+    padding:.5em 1.5em;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+.game-over-cont{
+    padding:2em;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color: var(--dark-color);
+    color:var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--black-color);
+    display: none;
+}
+
+.game-over-cont h2{
+    padding:1em 1em 1em 0;
+}
+
+.retry-btn{
+    outline: none;
+    border:1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color:var(--dark-color);
+    padding:.5em 1.5em;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.stop-btn{
+    outline: none;
+    border:none;
+    border:1px solid var(--primary-color);
+    background-color:transparent;
+    color:var(--primary-color);
+    padding:.5em 1.5em;
+    font-family: 'Poppins',sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+}
