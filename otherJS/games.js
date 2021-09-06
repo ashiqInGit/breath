@@ -46,3 +46,9 @@ game2btn.addEventListener('click',()=>{
     window.location.href="../Blockson/Blockson.html";
 
 })
+
+
+
+
+
+

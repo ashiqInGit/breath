@@ -129,15 +129,21 @@ p::selection{
     background-color: var(--light-color);
     box-shadow: 0 0 10px var(--black-color);
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 50px;
+    background-position-x: 50px;
 }
 
 .game1{
     background-image: url("../otherJS/carGame/img/car03.png");
-    background-size: cover;
-    background-size: 50px;
-    background-position-x: 50px;
     background-position-y: 30px;
-    background-repeat: no-repeat;
+ 
+}
+
+.game2{
+    background-image: url("../otherJS/Blockson/img/player01.png");
+    background-position-y: 40px;
 }
 
 .actual-game-cont p{
@@ -227,6 +233,11 @@ p::selection{
     font-weight: 900;
 }
 
+.game-top-bar p{
+    color:var(--dark-color);
+    padding:1em 0 0 0;
+    text-align: center;
+}
 
 .game-over-cont{
     padding:2em;
@@ -271,4 +282,37 @@ p::selection{
     font-family: 'Poppins',sans-serif;
     cursor: pointer;
     font-weight: 700;
+}
+
+
+.controls-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    position: fixed;
+    bottom:0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+.controls{
+    width:50px;
+    height:50px;
+    background-color:var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:var(--dark-color);
+    font-size: 1.7em;
+    margin:0 1em;
+}
+
+
+.right-control{
+    transform: rotate(180deg);
 }

@@ -66,8 +66,17 @@ function draw() {
             gameOver();
         }
     }
-
 }
+
+
+
+// //////////////////////////////////////// CAR CONTROLS //////////
+
+
+
+const rightControl=document.querySelector('.right-control');
+const leftControl=document.querySelector('.left-control');
+
 
 if(userInteraction){
     function keyPressed() {
@@ -81,11 +90,46 @@ if(userInteraction){
 }
 
 
+rightControl.addEventListener('mouseover',()=>{
+    if(userInteraction){
+        car.setvelocity(-6);
+    }
+   
+})
+
+rightControl.addEventListener('mouseleave',()=>{
+    if(userInteraction){
+        car.setvelocity(0);
+    }
+   
+})
+
+
+leftControl.addEventListener('mouseover',()=>{
+    if(userInteraction){
+        car.setvelocity(8);
+    }
+
+})
+
+
+leftControl.addEventListener('mouseleave',()=>{
+    if(userInteraction){
+        car.setvelocity(0);
+    }
+
+})
+
+
 
 
 function keyReleased(){
     car.setvelocity(0);
 }
+
+
+
+
 
 function addStrokes(){
 
@@ -142,6 +186,9 @@ const gameOverCont=document.querySelector('.game-over-cont');
 const retryBtn=document.querySelector('.retry-btn');
 const stopBtn=document.querySelector('.stop-btn');
 
+
+const controlsCont=document.querySelector('.controls-cont');
+
 function gameOver(){
     
     userInteraction=false;
@@ -189,6 +236,8 @@ stopBtn.addEventListener('click',()=>{
     score.innerHTML=0;
     clear();
 
+    controlsCont.style.opacity="0";
+    controlsCont.style.pointerEvents="none";
 
     window.scrollTo(0,0);
 })
@@ -200,11 +249,15 @@ stopBtn.addEventListener('click',()=>{
 
 const startBtn=document.querySelector('.start-btn');
 
+
 startBtn.addEventListener('click',()=>{
     
     window.scrollTo(0,screen.height);
     background(0,255,0);
     
+    controlsCont.style.opacity="1";
+    controlsCont.style.pointerEvents="all";
+
     userInteraction=true;
     startGame=true;
     loop();

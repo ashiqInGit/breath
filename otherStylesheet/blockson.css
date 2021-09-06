@@ -35,10 +35,18 @@ body{
     width:95%;
     margin:0 auto;
     padding:1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .back-to-home a{
     text-decoration: none;
+    color:var(--dark-color);
+}
+
+.back-to-home h3{
     color:var(--dark-color);
 }
 
