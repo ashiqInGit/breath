@@ -25,7 +25,7 @@ function Player(){
 
         noStroke();
         fill(255,0,0);
-        rect(this.x,this.y,this.width,this.height);
+        image(playerImg,this.x,this.y,this.width,this.height);
 
     }
 

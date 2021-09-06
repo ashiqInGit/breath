@@ -43,6 +43,6 @@ game1btn.addEventListener('click',()=>{
 
 game2btn.addEventListener('click',()=>{
 
-    window.location.href="../otherHTML/Blockson.html";
+    window.location.href="../Blockson/Blockson.html";
 
 })

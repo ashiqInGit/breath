@@ -2,7 +2,7 @@
 
 
 var startGame=false;
-var userInput=true;
+var userInteraction=true;
 var score=document.querySelector('.score');
 var finalScore=document.querySelector('.finalScore');
 var actualScore=0;
@@ -19,10 +19,10 @@ var otherCarimg=[];
 
 function preload(){
 
-    carImg=loadImage('../../Images/car03.png');
-    otherCarimg[0]=loadImage('../../Images/truck01.png');
-    otherCarimg[1]=loadImage('../../Images/truck02.png');
-    otherCarimg[2]=loadImage('../../Images/truck03.png');
+    carImg=loadImage('img/car03.png');
+    otherCarimg[0]=loadImage('img/truck01.png');
+    otherCarimg[1]=loadImage('img/truck02.png');
+    otherCarimg[2]=loadImage('img/truck03.png');
 
 }
 
@@ -69,7 +69,7 @@ function draw() {
 
 }
 
-if(userInput){
+if(userInteraction){
     function keyPressed() {
         if (keyCode === LEFT_ARROW || keyCode===65) {
             car.setvelocity(-8);
@@ -144,7 +144,7 @@ const stopBtn=document.querySelector('.stop-btn');
 
 function gameOver(){
     
-    userInput=false;
+    userInteraction=false;
     noLoop();
     startGame=false;
     gameOverCont.style.display="block";
@@ -164,7 +164,7 @@ retryBtn.addEventListener('click',()=>{
     gameOverCont.style.display="none";
 
     loop();
-    userInput=true;
+    userInteraction=true;
     startGame=true;
     
     actualScore=0;
@@ -188,6 +188,9 @@ stopBtn.addEventListener('click',()=>{
     actualScore=0;
     score.innerHTML=0;
     clear();
+
+
+    window.scrollTo(0,0);
 })
 
 
@@ -202,7 +205,7 @@ startBtn.addEventListener('click',()=>{
     window.scrollTo(0,screen.height);
     background(0,255,0);
     
-    userInput=true;
+    userInteraction=true;
     startGame=true;
     loop();
 })

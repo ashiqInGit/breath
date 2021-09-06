@@ -18,6 +18,7 @@
 body{
     overflow: hidden;
     font-family: 'Poppins',sans-serif;
+    
 }
             
 
@@ -36,10 +37,9 @@ body{
     padding:1em;
 }
 
-.back-to-home-arrow{
-    color:black;
-    transform: rotate(180deg);
-    cursor: pointer;
+.back-to-home a{
+    text-decoration: none;
+    color:var(--dark-color);
 }
 
 .btn-cont{
@@ -65,6 +65,7 @@ body{
     box-shadow: 0 0 10px var(--black-color);
     z-index: 100;
     display: none;
+    width:230px;
 }
 
 
