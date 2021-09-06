@@ -131,6 +131,15 @@ p::selection{
     cursor: pointer;
 }
 
+.game1{
+    background-image: url("../otherJS/carGame/img/car03.png");
+    background-size: cover;
+    background-size: 50px;
+    background-position-x: 50px;
+    background-position-y: 30px;
+    background-repeat: no-repeat;
+}
+
 .actual-game-cont p{
     color:var(--shadow-color);
     text-align:center;
@@ -237,7 +246,8 @@ p::selection{
 }
 
 .game-over-cont h2{
-    padding:1em 1em 1em 0;
+    width:250px;
+    padding:1em 0;
 }
 
 .retry-btn{

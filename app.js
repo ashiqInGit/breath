@@ -51,7 +51,7 @@ card3.addEventListener('click',()=>{
 
 
 card4.addEventListener('click',()=>{
-    window.location.href="otherHTML/games.html";
+    window.location.href="otherJS/carGame/games.html";
 })
 
 

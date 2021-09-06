@@ -104,8 +104,8 @@ function listenUser(){
     function startListen(){
         if(listenSpeech.resultValue){
 
-            let userInput=listenSpeech.resultString;
-            botReplay(userInput);
+            let userInteraction=listenSpeech.resultString;
+            botReplay(userInteraction);
         }
 
     }
