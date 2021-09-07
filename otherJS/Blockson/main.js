@@ -14,9 +14,9 @@ var blockSonGameScore=0;
 
 
 if(screenWidth>800){
-    addMonstersAt=80;
+    addMonstersAt=90;
 }else{
-    addMonstersAt=100;
+    addMonstersAt=110;
 }
 
 

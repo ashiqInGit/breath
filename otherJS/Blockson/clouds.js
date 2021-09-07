@@ -15,7 +15,7 @@ function Cloud(){
 
     this.render=function(){
 
-        // rect(this.x,this.y,this.width,this.height);
+      
         image(cloudImgs[this.imgNum],this.x,this.y,this.width,this.height);
 
     }

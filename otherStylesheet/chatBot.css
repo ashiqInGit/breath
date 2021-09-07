@@ -40,12 +40,13 @@
     width: 100%;
     height:auto;
     padding:3em 1em 1em 1em;
-
+ 
 }
 
 
 .the-head{
     text-align: center;
+    
 }
 
 .the-head p{
@@ -56,12 +57,13 @@
 
 
 .bot-cont{
-    /* border:1px solid blue; */
+    
     padding:2em 3em 3em 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -72,6 +74,8 @@
     background-size: cover;
     background-color: var(--light-color);
     background-blend-mode: multiply;
+ 
+    
 }
 
 .bot-page-btns{
@@ -81,6 +85,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .start-convo-btn{
@@ -119,8 +124,18 @@
 .listening-text{
     transition: all 300ms ease-in-out;
     opacity: 0;
+    position:absolute;
+    top:30px;
+    left:50%;
+    transform: translate(-50%,0);
 }
 
 .show-text{
     opacity: 1;
+}
+
+
+.user-speech{
+    font-size: 1.2em;
+    color:var(--dark-color);
 }

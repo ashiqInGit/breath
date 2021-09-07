@@ -89,35 +89,30 @@ if(userInteraction){
     }
 }
 
-
-rightControl.addEventListener('mouseover',()=>{
+var right=false;
+rightControl.addEventListener('mousedown',()=>{
     if(userInteraction){
         car.setvelocity(-6);
     }
-   
+
 })
 
-rightControl.addEventListener('mouseleave',()=>{
-    if(userInteraction){
-        car.setvelocity(0);
-    }
-   
+rightControl.addEventListener('mouseup',()=>{
+    car.setvelocity(0);
+
 })
 
 
-leftControl.addEventListener('mouseover',()=>{
+leftControl.addEventListener('mousedown',()=>{
     if(userInteraction){
-        car.setvelocity(8);
+        car.setvelocity(6);
     }
 
 })
 
 
-leftControl.addEventListener('mouseleave',()=>{
-    if(userInteraction){
-        car.setvelocity(0);
-    }
-
+leftControl.addEventListener('mouseup',()=>{
+    car.setvelocity(0);
 })
 
 
