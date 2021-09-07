@@ -89,21 +89,23 @@ if(userInteraction){
     }
 }
 
-var right=false;
-rightControl.addEventListener('mousedown',()=>{
+
+rightControl.addEventListener('pointerdown',()=>{
     if(userInteraction){
         car.setvelocity(-6);
     }
 
 })
 
-rightControl.addEventListener('mouseup',()=>{
+
+
+rightControl.addEventListener('pointerup',()=>{
     car.setvelocity(0);
 
 })
 
 
-leftControl.addEventListener('mousedown',()=>{
+leftControl.addEventListener('pointerdown',()=>{
     if(userInteraction){
         car.setvelocity(6);
     }
@@ -111,7 +113,7 @@ leftControl.addEventListener('mousedown',()=>{
 })
 
 
-leftControl.addEventListener('mouseup',()=>{
+leftControl.addEventListener('pointerup',()=>{
     car.setvelocity(0);
 })
 
