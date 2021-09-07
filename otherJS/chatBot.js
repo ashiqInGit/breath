@@ -13,7 +13,7 @@ const stoConvoBtn=document.querySelector('.stop-convo-btn');
 const startConvoBtnCont=document.querySelector('.start-convo-btn-cont');
 const otherBtnCont=document.querySelector('.other-btn-cont');
 
-
+const userSpeech=document.querySelector('.user-speech');
 
 
 
@@ -22,6 +22,8 @@ stoConvoBtn.addEventListener('click',()=>{
 
     speakBtn.style.display="none";
     stoConvoBtn.style.display="none";
+
+    userSpeech.innerHTML=" ";
     
 })
 
@@ -95,18 +97,15 @@ function loading_error(){
 
 function listenUser(){
 
-    listenSpeech.start();
+    listenSpeech.start(false,true);
     listenSpeech.onResult=startListen;
    
     listenSpeech.onStart=start;
     listenSpeech.onEnd=end;
 
     function startListen(){
-        if(listenSpeech.resultValue){
 
-            let userInteraction=listenSpeech.resultString;
-            botReplay(userInteraction);
-        }
+        userSpeech.innerHTML=listenSpeech.resultString;
 
     }
  
@@ -117,6 +116,8 @@ function listenUser(){
 function botReplay(message){
     
     let username = "local-user";
+
+    // ////////// BOT REPLIES //////
 
     bot.reply(username, message).then(function(reply) {
 
@@ -132,10 +133,22 @@ function botReplay(message){
 
 const listenText=document.querySelector('.listening-text');
 
+
 function start(){
     listenText.classList.add("show-text");
+    userSpeech.innerHTML=" ";
 }
 
 function end(){
     listenText.classList.remove("show-text");
+
+
+
+    ///////// FEEDING INPUT TO BOT //////////
+
+    if(listenSpeech.resultValue){
+
+        let userInteraction=listenSpeech.resultString;
+        botReplay(userInteraction);
+    }
 }
