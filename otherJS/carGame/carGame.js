@@ -11,6 +11,7 @@ var actualScore=0;
 var road;
 var car;
 var roadStroke=[];
+var centerLines=[];
 var otherCars=[];
 
 
@@ -32,6 +33,7 @@ function setup() {
     background(0,255,0);
     road = new Road();
     roadStroke.push(new RoadStroke());
+    centerLines.push(new CenterLine());
     car = new Car();
 
     otherCars.push(new OtherCars());
@@ -45,8 +47,12 @@ function draw() {
     if(startGame){
         road.render();
 
-        if(frameCount%30==0){
+        if(frameCount%10==0){
             roadStroke.push(new RoadStroke());
+        }
+
+        if(frameCount%30==0){
+            centerLines.push(new CenterLine());
         }
 
         if(frameCount%40==0){
@@ -55,8 +61,9 @@ function draw() {
             otherCars[otherCars.length-1].imgNum=randomNum;
 
         }
-    
+
         addStrokes();
+        addCenterLines();
         addOtherCars();
 
         car.update();
@@ -125,8 +132,7 @@ function keyReleased(){
 }
 
 
-
-
+// ADDING SIDELINES TO THE ROAD
 
 function addStrokes(){
 
@@ -141,6 +147,29 @@ function addStrokes(){
     }
 
 }
+
+
+// ADDING CENTER LINE TO THE ROAD
+
+
+function addCenterLines(){
+
+    for(let i=centerLines.length-1;i>0;i--){
+
+        centerLines[i].render();
+        centerLines[i].update();
+
+        if(centerLines[i].y>height){
+            centerLines.splice(i,1);
+        }
+
+    }
+
+}
+
+
+
+// ADDING OTHER CARS
 
 
 function addOtherCars(){
@@ -245,11 +274,12 @@ stopBtn.addEventListener('click',()=>{
 
 
 const startBtn=document.querySelector('.start-btn');
+const body=document.querySelector('body');
+
 
 
 startBtn.addEventListener('click',()=>{
     
-    window.scrollTo(0,screen.height);
     background(0,255,0);
     
     controlsCont.style.opacity="1";
@@ -258,4 +288,7 @@ startBtn.addEventListener('click',()=>{
     userInteraction=true;
     startGame=true;
     loop();
+
+    window.scrollTo(0,body.clientHeight);
 })
+
