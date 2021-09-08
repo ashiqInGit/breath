@@ -295,6 +295,7 @@ p::selection{
     bottom:0;
     opacity: 0;
     pointer-events: none;
+    padding:0 0 2.5em 0;
 }
 
 

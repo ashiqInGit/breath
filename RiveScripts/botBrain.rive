@@ -2,16 +2,11 @@
 ! version = 2.0
 
 
-// Substitutions
-! sub &quot;    = "
-! sub &apos;    = '
-! sub &amp;     = &
-! sub &lt;      = <
-! sub &gt;      = >
-! sub +         = plus
-! sub -         = minus
-! sub /         = divided
-! sub *         = times
+////////////////////////////////////////////////////////////////////
+////               SUBSTITUITION FOR SHORTHAND WORDS            ////
+////////////////////////////////////////////////////////////////////
+
+
 ! sub i'm       = i am
 ! sub i'd       = i would
 ! sub i've      = i have
@@ -58,11 +53,6 @@
 ! sub when's    = when is
 ! sub when're   = when are
 ! sub when'd    = when did
-! sub y         = why
-! sub u         = you
-! sub ur        = your
-! sub r         = are
-! sub n         = and
 ! sub im        = i am
 ! sub wat       = what
 ! sub wats      = what is
@@ -92,58 +82,6 @@
 ! sub ain't     = is not
 ! sub aint      = is not
 ! sub wanna     = want to
-! sub brb       = be right back
-! sub bbl       = be back later
-! sub gtg       = got to go
-! sub g2g       = got to go
-! sub lyl       = love you lots
-! sub gf        = girlfriend
-! sub g/f       = girlfriend
-! sub bf        = boyfriend
-! sub b/f       = boyfriend
-! sub b/f/f     = best friend forever
-! sub :-)       = smile
-! sub :)        = smile
-! sub :d        = grin
-! sub :-d       = grin
-! sub :-p       = tongue
-! sub :p        = tongue
-! sub ;-)       = wink
-! sub ;)        = wink
-! sub :-(       = sad
-! sub :(        = sad
-! sub :'(       = cry
-! sub :-[       = shy
-! sub :-\       = uncertain
-! sub :-/       = uncertain
-! sub :-s       = uncertain
-! sub 8-)       = cool
-! sub 8)        = cool
-! sub :-*       = kissyface
-! sub :-!       = foot
-! sub o:-)      = angel
-! sub >:o       = angry
-! sub :@        = angry
-! sub 8o|       = angry
-! sub :$        = blush
-! sub :-$       = blush
-! sub :-[       = blush
-! sub :[        = bat
-! sub (a)       = angel
-! sub (h)       = cool
-! sub 8-|       = nerdy
-! sub |-)       = tired
-! sub +o(       = ill
-! sub *-)       = uncertain
-! sub ^o)       = raised eyebrow
-! sub (6)       = devil
-! sub (l)       = love
-! sub (u)       = broken heart
-! sub (k)       = kissyface
-! sub (f)       = rose
-! sub (w)       = wilted rose
-
-// Person substitutions
 ! person i am    = you are
 ! person you are = I am
 ! person i'm     = you're
@@ -155,18 +93,17 @@
 
 
 
+////////////////////////////////////////////////////////////////////
+////                     GENERAL THINGS                         ////
+////////////////////////////////////////////////////////////////////
+
+
 +*
--Im not sure what you said
-
-
-+ hello bot
-- Hello, human!
+-Im not sure what you said,So how do you feeling today 
 
 
 +* sad *
 -There's no things to be worry ,everything will be alright my friend.
 
 
-+hai
--Hi my beautiful friend
 
