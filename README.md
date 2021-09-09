@@ -117,3 +117,27 @@ So i added two simple games to play.
 #### How to play:
 
 * Use Up arrow (or) Just click on the screen to jump.
+
+
+
+# Nutrition for Mental Health
+
+It’s also important to understand how food choices affect your brain, Good diet is 
+important for mental health.
+
+#### How to navigate
+
+* Click "Explore" button on main page. (Takes you to the second section).
+* Click on the "Nutrition" card to explore.
+
+
+
+# Exercise for Mental Health
+
+One study found that increasing your activity levels from doing nothing, to exercising at least three times a week, reduces the risk of depression by up to 30 per cent.
+
+#### How to navigate
+
+* Click "Explore" button on main page. (Takes you to the second section).
+* Click on the "Exercise" card to explore.
+
