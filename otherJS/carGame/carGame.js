@@ -55,12 +55,17 @@ function draw() {
             centerLines.push(new CenterLine());
         }
 
-        if(frameCount%40==0){
-            let randomNum=Math.floor(Math.random()*3);
-            otherCars.push(new OtherCars());
-            otherCars[otherCars.length-1].imgNum=randomNum;
 
+        if(frameCount>300){
+            if(frameCount%40==0){
+                let randomNum=Math.floor(Math.random()*3);
+                otherCars.push(new OtherCars());
+                otherCars[otherCars.length-1].imgNum=randomNum;
+    
+            }
         }
+
+
 
         addStrokes();
         addCenterLines();

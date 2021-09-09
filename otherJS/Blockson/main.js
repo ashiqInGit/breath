@@ -68,10 +68,16 @@ function draw(){
         player.jump();
         player.render();   
 
-        
-        if(frameCount%addMonstersAt === 0){
-            obstacles.push(new Obstacles());
 
+        if(frameCount>200){
+            if(frameCount%addMonstersAt === 0){
+                obstacles.push(new Obstacles());
+    
+            }
+        }
+
+        if(frameCount>440){
+            noLoop();
         }
 
         addMonster();
