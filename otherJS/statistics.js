@@ -147,55 +147,6 @@ function addCountry(countryName){
 
 
 
-// //++++++++++++++++++++= ADDING RANDOM COUNTRY +++++++++++++++++++++++++++++++++
-
-
-// const randomCountryBtn=document.querySelector('.random-country-btn');
-
-// const errorBtn=document.querySelector('.error-btn');
-// const wholeChartCont=document.querySelector('.whole-staticstics-cont');
-// const errorMsgCont=document.querySelector('.error-msg-cont');
-
-// function addRandomCountry(){
-
-
-//     console.log(alldata.length);
-//     if(alldata.length>15){
-//         alldata.pop();
-//     }
-
-//     let randomcountry=Math.floor(Math.random()*data.length);
-
-//     data[randomcountry]["borderColor"]=`#${randomColorPicker()}`;
-//     data[randomcountry].borderWidth= 2;
-//     data[randomcountry].tension=0.17;
-//     data[randomcountry].backgroundColor='transparent';
-
-
-//     alldata.push(data[randomcountry]);
-//     // console.log(alldata);
-
-//     try{
-//         myChart.update();
-//     }catch(err){
-//         wholeChartCont.classList.add('blur-background');
-//         errorMsgCont.style.display="block";
-
-//         errorBtn.addEventListener('click',()=>{
-//             window.location.reload();
-//         })
-        
-//     }
-//     // myChart.update();
-// }
-
-
-// randomCountryBtn.addEventListener('click',()=>{
-//     addRandomCountry();
-// })
-
-
-
 // ++++++++++++++++++++++++++++ REMOVE COUNTRY FROM CHART +++++++++++++++++++++++++++
 
 
