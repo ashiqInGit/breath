@@ -141,3 +141,15 @@ One study found that increasing your activity levels from doing nothing, to exer
 * Click "Explore" button on main page. (Takes you to the second section).
 * Click on the "Exercise" card to explore.
 
+
+# Of course it is Responsive
+
+The whole website is responsive for most of the devices out there.
+
+
+![Blockson Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+![Blockson Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+
+
