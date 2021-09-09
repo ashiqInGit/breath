@@ -73,7 +73,7 @@ Here you find statistics of some mental health related disorders.
 * Alcohol use disorders
 
 
-![Statistics](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Statistics](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/images_for_readme/statisticsImg.PNG?raw=true)
 
 #### How to use
 
