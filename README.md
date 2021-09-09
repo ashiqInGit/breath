@@ -29,7 +29,3 @@ I hope i made this project very easy to use,But still if you find any difficulti
 
 
 
-![alt text](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/chatbot.png?raw=true)
-
-
-
