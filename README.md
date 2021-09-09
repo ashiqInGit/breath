@@ -146,6 +146,7 @@ One study found that increasing your activity levels from doing nothing, to exer
 
 The whole website is responsive for most of the devices out there.
 
+#### Sample Images.
 
 ![Mobile version's image](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/images_for_readme/mobileVersion.PNG?raw=true)
 
