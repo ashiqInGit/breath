@@ -1,22 +1,22 @@
 
 
-#BREATH
+# BREATH
 
 This project is all about Mental Health,it shows how important is to look after your mental health
 and shows some easy ways to maintain and improve your mental health.
 [Project Link](https://ashiqingit.github.io/breath/)
 
 
-#What we have here
+# What we have here
 
-* Frendly Chatbot
-* Statistis of Mental Health disorders
+* Friendly Chatbot
+* Statistics of Mental Health disorders
 * Nutritions need to maintain mental health
 * Exercise need to maintain mental health
 * Some game to make you feel better
 
 
-#How to Use
+# How to Use
 
 I hope i made this project very easy to use,But still if you find any difficulties follow the steps.
 
