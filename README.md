@@ -93,16 +93,27 @@ So i added two simple games to play.
 
 * On the below page click on the "STAY HAPPY" card to open Gaming section ,where you can find two games
 ![Page Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-* Click the game you want to play.
+* Click on the game you want to play.
 
 
-#### Games
+## Games
 
-## Block Rider
-
-
+### Block Rider
 
 
+![Block Rider Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+#### How to play:
+
+* Use Left and Right arrow (or) use A and D to move the Car.
+* If your using mobile use the two Arrow symbols below to move the car.
 
 
 
+### Blockson
+
+![Blockson Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+#### How to play:
+
+* Use Up arrow (or) Just click on the screen to jump.
