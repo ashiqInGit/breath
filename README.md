@@ -40,11 +40,11 @@ It is not trained for all conversation but you can talk some normal conversation
 #### How to use
 
 * Click "Start Conversation" button. (Bot will greet you).
-* Click "Listen me" button and speaking once you stop speaking bot will reply.
+* Click "Listen me" button and start speaking once you stop speaking bot will reply.
 * Click "Stop Conversation" to stop the conversation.
 
 
-![ChatBot Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![ChatBot Image](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/images_for_readme/chatBotImg.PNG?raw=true)
 
 
 
