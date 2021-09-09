@@ -85,14 +85,14 @@ Here you find statistics of some mental health related disorders.
 # Gaming 
 
 A new paper suggests that video games might hold the key to providing affordable, stigma-free mental health
-treatment around the globe. \
+treatment around the globe.  
 
 So i added two simple games to play.
 
 #### How to navigate
 
 * On the below page click on the "STAY HAPPY" card to open Gaming section ,where you can find two games
-![Page Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Page Image](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/images_for_readme/secondPage.PNG?raw=true)
 * Click on the game you want to play.
 
 
@@ -101,7 +101,7 @@ So i added two simple games to play.
 ### Block Rider
 
 
-![Block Rider Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Block Rider Image](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/images_for_readme/carGameImg.PNG?raw=true)
 
 #### How to play:
 
@@ -112,7 +112,7 @@ So i added two simple games to play.
 
 ### Blockson
 
-![Blockson Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Blockson Image](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/images_for_readme/blocksonImg.PNG?raw=true)
 
 #### How to play:
 
