@@ -139,3 +139,19 @@ window.addEventListener('scroll',()=>{
 
 
 
+
+// ///////// ATTRIBUTION CONT ON FOOTER
+
+const attributeText=document.querySelector('.attribute-text');
+const attributeCont=document.querySelector('.actual-author-contribution-cont');
+const cross=document.querySelector('.cross');
+
+attributeText.addEventListener('click',()=>{
+    attributeCont.style.top="0";
+    attributeCont.style.opacity="1";
+})
+
+cross.addEventListener('click',()=>{
+    attributeCont.style.top="500px";
+    attributeCont.style.opacity="0";
+})

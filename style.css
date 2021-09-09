@@ -904,11 +904,16 @@ p::selection{
     padding: 3em 3em .5em 3em;
     width: 100%;
     height:auto;
+    overflow: hidden;
 }
 
 .footer-text-cont{
     padding-bottom: 1em;
     border-bottom: 1px solid var(--dark-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .footer-text-cont h2{
@@ -965,3 +970,70 @@ p::selection{
     font-size: .8em;
 }
 
+
+
+
+
+
+.author-contribution-cont{
+    position: relative;
+}
+
+.attribute-text{
+    color:var(--dark-color);
+    border-left:3px solid var(--light-color);
+    padding:0 .5em;
+    cursor: pointer;
+}
+
+
+
+.actual-author-contribution-cont{
+    background-color: var(--dark-color);
+    position:absolute;
+    top:500px;
+    right:0;
+    width:350px;
+    max-height:180px;
+    padding:.5em;
+    overflow:scroll;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+}
+
+
+
+.attributes-head-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cross{
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.actual-author-contribution-cont p{
+    color:var(--primary-color);
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.contribution-list{
+    list-style: none;
+
+}
+
+.contribution-list li{
+    padding:.3em 0;
+    color:var(--light-color);
+    border-top:1px solid var(--light-color);
+    font-size: .7em;
+}
+
+.contribution-list li a{
+    text-decoration: none;
+    color:blue;
+    font-size: 1.1em;
+}

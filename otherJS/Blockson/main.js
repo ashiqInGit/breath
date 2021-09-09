@@ -76,10 +76,6 @@ function draw(){
             }
         }
 
-        if(frameCount>440){
-            noLoop();
-        }
-
         addMonster();
     
 

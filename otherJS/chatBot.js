@@ -1,5 +1,7 @@
 
 
+var count=0;
+
 // THE BUTTONS ++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -58,15 +60,18 @@ function welcome(){
 
 function startSpeaking(){
 
-
     startConvoBtn.addEventListener('click',()=>{
+
+        count++;
         startConvoBtnCont.style.display="none";
     
         speakBtn.style.display="block";
         stoConvoBtn.style.display="block";
 
+        if(count===1){
+            welcome();
+        }
         
-        welcome();
     })
 
 }
