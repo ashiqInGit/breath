@@ -26,6 +26,7 @@ I hope i made this project very easy to use,But still if you find any difficulti
 * Click Take me there button
 * There you can find a chatbot
 * Click "Start Conversation" botton.
+* Click "Listen me" button and,
 * Ask for "Website tour" to Chatbot.
 * Bot will guide you how to use the Breath.
 
