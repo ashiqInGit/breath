@@ -152,4 +152,6 @@ The whole website is responsive for most of the devices out there.
 ![Blockson Image](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
 
+#### THANK YOU <3
+
 
