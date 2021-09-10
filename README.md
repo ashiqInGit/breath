@@ -57,7 +57,10 @@ It is not trained for all conversation but you can talk some normal conversation
 * [P5.speech](https://idmnyu.github.io/p5.js-speech/)
 * [Rivescript](https://www.rivescript.com/)
 
+### Prerequisite
 
+* Chrome browser.
+* A divice to run that.
 
 
 # Statistics
@@ -154,5 +157,7 @@ The whole website is responsive for most of the devices out there.
 
 ![Mobile version's image](https://github.com/ashiqInGit/breath/blob/gh-pages/Images/images_for_readme/mobileVersion02.PNG?raw=true)
 
+
+#### THANK YOU <3
 
 

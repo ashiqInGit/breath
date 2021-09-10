@@ -95,7 +95,6 @@ function loading_done() {
 function loading_error(){
     console.log("Error!");
 
-    speech.speak("I think some Error occured");
 }
 
 
@@ -122,9 +121,28 @@ function botReplay(message){
     
     let username = "local-user";
 
-    // ////////// BOT REPLIES //////
-
     bot.reply(username, message).then(function(reply) {
+
+
+        if(reply==="game section"){
+            window.location.href="../otherJS/carGame/games.html";
+            return;
+        }
+
+        if(reply==="exercise section"){
+            window.location.href="../otherHTML/exercise.html";
+            return;
+        }
+
+        if(reply==="food section"){
+            window.location.href="../otherHTML/food.html";
+            return;
+        }
+
+        if(reply==="statistics section"){
+            window.location.href="../otherHTML/statistics.html";
+            return;
+        }
 
         speech.speak(reply); 
 
