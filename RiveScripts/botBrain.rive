@@ -7,6 +7,23 @@
 ////////////////////////////////////////////////////////////////////
 
 
+! sub we'd      = we would
+! sub we're     = we are
+! sub we've     = we have
+! sub we'll     = we will
+! sub whats     = what is
+! sub what's    = what is
+! sub what're   = what are
+! sub what've   = what have
+! sub what'll   = what will
+! sub can't     = can not
+! sub whos      = who is
+! sub who's     = who is
+! sub who'd     = who would
+! sub who'll    = who will
+! sub don't     = do not
+! sub didn't    = did not
+! sub it's      = it is
 ! sub i'm       = i am
 ! sub i'd       = i would
 ! sub i've      = i have
@@ -27,23 +44,6 @@
 ! sub they're   = they are
 ! sub they've   = they have
 ! sub they'll   = they will
-! sub we'd      = we would
-! sub we're     = we are
-! sub we've     = we have
-! sub we'll     = we will
-! sub whats     = what is
-! sub what's    = what is
-! sub what're   = what are
-! sub what've   = what have
-! sub what'll   = what will
-! sub can't     = can not
-! sub whos      = who is
-! sub who's     = who is
-! sub who'd     = who would
-! sub who'll    = who will
-! sub don't     = do not
-! sub didn't    = did not
-! sub it's      = it is
 ! sub could've  = could have
 ! sub couldn't  = could not
 ! sub should've = should have
@@ -91,9 +91,8 @@
 
 
 +*
--Im not sure what you said.
--Sorry what is that , can you please repeat.
- 
+- I am not sure what you said.
+- Sorry what is that , can you please repeat.
 
 
 + (hello|hi|hey|howdy|hola|hai|yo) 
@@ -107,11 +106,21 @@
 - You can share your feelings with me. 
 - I am here to help you to feel great.
 
++ what can you do
+- I am here to give you company.
+- You can share your feelings with me. 
+- I am here to help you to feel great.
+- I love talking to beautiful humans like you.
+
+
 + what [*] you do
 - I am here to give you company.
 - You can share your feelings with me. 
 - I am here to help you to feel great.
 - I love talking to beautiful humans like you.
+
+
+
 
 
 + [*] how are you 
@@ -237,14 +246,26 @@
 - I am sorry to hear that you are <star>.
 - I'm sure it's not pleasant to be <star>.
 
++ (sad|unhappy|mad|angry|pissed|depressed) 
+- Come on everthing will be alright soon.
+- I am sorry to hear that you are <star> , everthing will be alright.
+- I'm sure it's not pleasant to be <star>.
+
 
 + i [*] (happy|excited|glad|good|great|fine) [*]
-- Happy to hear that 
+- Happy to hear that .
 - What makes you smile like that.
+- wow , Thats nice .
 
 + [*] (happy|excited|glad|good|great|fine) [*]
 - Happy to hear that 
 - What makes you smile like that.
+- wow , Thats nice .
+
++ (happy|excited|glad|good|great|fine)
+- Happy to hear that 
+- What makes you smile like that.
+- wow , Thats nice .
 
 + i (believe|think) *
 - Do you really think so?
@@ -287,7 +308,6 @@
 
 + [*] you *
 - We were discussing you -- not me.
-- Oh, I <star>?
 - You're not really talking about me -- are you?
 - What are your feelings now?
 
