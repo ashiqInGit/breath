@@ -82,14 +82,6 @@
 ! sub ain't     = is not
 ! sub aint      = is not
 ! sub wanna     = want to
-! person i am    = you are
-! person you are = I am
-! person i'm     = you're
-! person you're  = I'm
-! person my      = your
-! person your    = my
-! person you     = I
-! person i       = you
 
 
 
@@ -99,13 +91,13 @@
 
 
 +*
--Im not sure what you said
--Sorry what is that,can you please repeat
-
+-Im not sure what you said.
+-Sorry what is that , can you please repeat.
+ 
 
 
 + (hello|hi|hey|howdy|hola|hai|yo) 
-- <star> ,there I am happy you are here
+- <star> ,there I am happy you are here.
 - <star> ,How is it going?
 - <star> ,How are you?
 
@@ -115,6 +107,11 @@
 - You can share your feelings with me. 
 - I am here to help you to feel great.
 
++ what [*] you do
+- I am here to give you company.
+- You can share your feelings with me. 
+- I am here to help you to feel great.
+- I love talking to beautiful humans like you.
 
 
 + [*] how are you 
@@ -133,6 +130,8 @@
 
 + fine
 - Happy to hear that.
+- That's what i wish for , Happy to hear that.
+
 
 
 + [*] suicide [*]
@@ -144,7 +143,7 @@
 
 + (ok|agree)
 - thank you for agreeing with me.
-- okay
+- okay.
 
 + [*] (be my friend)
 - of course i will.
@@ -166,19 +165,22 @@
 + [*] love you
 - Love you too.
 - Aww , You are the beautiful thing in this whole world , love you too.
+- I love you too , beautiful.
 
 
 + [*] tips [*] (mental health|health|be happy|happy)
 - love the people who really cares about you.
 - give your love to others,that make you feel great.
-- This website contains many thing that help you to <star>.
+- This website contains many thing that help you for <star>.
 
 
 
-+ (ha ha|heh heh|that was funny)
-- I thought it was funny
-- ha ha
-- yeah, it was pretty funny
++ (ha ha|heh heh|that was funny|hahaha|haha)
+- I thought it was funny.
+- ha ha.
+- yeah, it was pretty funny.
+
+
 
 
 
@@ -261,7 +263,6 @@
 - Of what does feeling <star> remind you?
 
 + i * you
-- Perhaps in your fantasies we <star> each other.
 - Do you wish to <star> me?
 - You seem to need to <star> me.
 - Do you <star> anyone else?
@@ -333,6 +334,18 @@
 - Does this topic make you feel angry?
 - Is something making you feel angry?
 - Does using that kind of language make you feel better?
+
+
+
++ (fuck|fucker|shit|damn|shut up|bitch) 
+- Does it make you feel strong to use that kind of language?
+- Are you angry?
+- Does this topic make you feel angry?
+- Is something making you feel angry?
+- Does using that kind of language make you feel better?
+
+
+
 
 
 + (goodbye|good bye|bye|see ya)
