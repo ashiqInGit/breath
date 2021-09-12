@@ -59,6 +59,8 @@ chatBotPageTakingBtn.addEventListener('click',()=>{
     window.location.href="otherHTML/chatBot.html";
 })
 
+
+
 // +++++++++++++++++++++++++++ ANIMATION STUFFS
 
 
@@ -137,6 +139,14 @@ window.addEventListener('scroll',()=>{
 })
 
 
+// //// Page reload
+
+const logo=document.querySelector('.logo');
+
+logo.addEventListener('click',()=>{
+    window.location.reload();
+})
+
 
 
 
@@ -147,7 +157,7 @@ const attributeCont=document.querySelector('.actual-author-contribution-cont');
 const cross=document.querySelector('.cross');
 
 attributeText.addEventListener('click',()=>{
-    attributeCont.style.top="0";
+    attributeCont.style.top="50px";
     attributeCont.style.opacity="1";
 })
 
